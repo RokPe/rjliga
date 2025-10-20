@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "SUSE", sans-serif;
+  font-size: 14px;
+  backdrop-filter: blur(30px);
+}
+
+.container {
+  display: flex;
+}
+
+.content_wrapper {
+  flex: 1;
+  padding: 15px;
+  background-color: #dae9ea;
+  border-radius: 8px;
+  box-shadow: 3px 18px 26px -9px rgba(166,166,166,0.91);
+}
+
+h1 {
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+
+.row,
+.skupne_tocke {
+  display: flex;
+}
+
+.row div,
+.league_row div {
+  width: 39px;
+  height: 43px;
+  padding-bottom: 2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.julijan .header_row .points,
+.julijan .league_row .points,
+.rok .header_row .points,
+.rokson .league_row .points {
+  justify-content: end;
+}
+
+.league_row div,
+.rok .header_row div,
+.julijan .header_row div {
+  width: 47px;
+}
+
+.row .team,
+.league_row .team {
+  flex: 1;
+}
+
+.header_row {
+  font-size: 0.7rem;
+  height: 27px;
+}
+
+.header_row div {
+  height: 27px;
+}
+
+
+.data_row {
+  color: #3C4940;
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+}
+
+.data_row .team,
+.data_row .points {
+  color: black;
+}
+
+.data_row:nth-child(1) {
+  font-weight: bold;
+}
+
+.data_row:last-child {
+  border-bottom: none;
+}
+
+.league_table .team img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.row .position,
+.row .team,
+.league_row .position,
+.league_row .team {
+  justify-content: start;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  gap: 16px;
+}
+
+.left_side,
+.right_side {
+  flex: 1;
+}
+
+.right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.right_top,
+.right_bottom {
+  flex: 1;
+}
+
+.right_top {
+  padding: 25px;
+  background-color: #dae9ea;
+  border-radius: 10px;
+  box-shadow: 3px 18px 26px -9px rgba(166,166,166,0.91);
+  visibility: hidden;
+}
+
+.player_info {
+  height: 150px;
+  margin: 0 auto;
+  background-color: salmon;
+  border-radius: 10px;
+}
+
+.right_bottom {
+  display: flex;
+  gap: 15px;
+}
+
+.rok,
+.julijan {
+  max-width: 290px;
+  padding: 10px 25px 15px 15px;
+  font-size: 0.8rem;
+}
+
+.julijan .header_row,
+.rok .header_row {
+  height: 21px;
+}
+
+.julijan .header_row div,
+.rok .header_row div {
+  height: 21px;
+}
+
+.julijan .league_row,
+.rok .league_row  {
+  height: 21px;
+}
+
+.julijan .league_row div,
+.rok .league_row div {
+  height: 21px;
+}
+
+.league_row {
+  display: flex;
+  height: 21px;
+}
+
+.skupne_tocke {
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  font-weight: bold;
+}
+
+span {
+  margin-left: 3px;
+}
+
+.pl .team:hover {
+  cursor: pointer;
+}
+
+
+.joker {
+  font-weight: bold;
+  color: #9e702a;
+}

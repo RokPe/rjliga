@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=SUSE&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Standings table</title>
+</head>
+<body>
+<div class="container">
+  <div class="left_side">
+    <div class="content_wrapper">
+      <!-- <button>Get League Standings</button> -->
+      <h1>Premier League 2025/2026 Standings</h1>
+      <div class="standings_wrapper">
+        <div class="header_row row">
+          <div class="position">POS</div>
+          <div class="team">TEAM</div>
+          <div class="matches_played">MP</div>
+          <div class="won">W</div>
+          <div class="draw">D</div>
+          <div class="lost">L</div>
+          <div class="goals">G</div>
+          <div class="goal_diff">GD</div>
+          <div class="points">PTS</div>
+        </div>
+        <div class="league_table pl"></div>
+      </div>
+    </div>
+  </div>
+  <div class="right_side">
+    <div class="right_top" id="toptop">
+      <div class="player_info">
+        <p id="player_name"></p>
+      </div>
+    </div>
+    <div class="right_bottom">
+      <div class="content_wrapper rok">
+        <div class="info_o_ligi">
+    
+        </div>
+        <div class="skupne_tocke roky">
+          <h1>Rok</h1>
+          <p>Total: <span>30</span></p>
+        </div>
+        <div class="standings_wrapper">
+          <div class="header_row row">
+            <div class="position">POS</div>
+            <div class="team">TEAM</div>
+            <div class="points">PTS</div>
+          </div>
+          <div class="tabela_napovedi rokson">
+            <div class="league_row">
+              <div class="position">1</div>
+              <div class="team">Arsenal</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">2</div>
+              <div class="team">Chelsea</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">3</div>
+              <div class="team">Liverpool</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">4</div>
+              <div class="team">Manchester City</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">5</div>
+              <div class="team">Aston Villa</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">6</div>
+              <div class="team">Brighton</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">7</div>
+              <div class="team">Newcastle</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">8</div>
+              <div class="team">Manchester United</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position joker">9</div>
+              <div class="team joker">Crystal Palace</div>
+              <div class="points joker">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">10</div>
+              <div class="team">Tottenham</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">11</div>
+              <div class="team">Nottingham Forest</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">12</div>
+              <div class="team">Everton</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">13</div>
+              <div class="team">Bournemouth</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">14</div>
+              <div class="team">Fulham</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">15</div>
+              <div class="team">Brentford</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">16</div>
+              <div class="team">West Ham</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">17</div>
+              <div class="team">Sunderland</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">18</div>
+              <div class="team">Wolves</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">19</div>
+              <div class="team">Burnley</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">20</div>
+              <div class="team">Leeds</div>
+              <div class="points">+3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="content_wrapper julijan">
+        <div class="skupne_tocke">
+          <h1>Julijan</h1>
+          <p>Total: <span>30</span></p>
+        </div>
+        <div class="standings_wrapper">
+          <div class="header_row row">
+            <div class="position">POS</div>
+            <div class="team">TEAM</div>
+            <div class="points">PTS</div>
+          </div>
+          <div class="tabela_napovedi djulo">
+            <div class="league_row">
+              <div class="position">1</div>
+              <div class="team">Manchester City</div>
+              <div class="points">-2</div>
+            </div>
+            <div class="league_row">
+              <div class="position">2</div>
+              <div class="team">Liverpool</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">3</div>
+              <div class="team">Arsenal</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">4</div>
+              <div class="team">Chelsea</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">5</div>
+              <div class="team">Aston Villa</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">6</div>
+              <div class="team">Manchester United</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">7</div>
+              <div class="team">Newcastle</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position joker">8</div>
+              <div class="team joker">Brighton</div>
+              <div class="points joker">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">9</div>
+              <div class="team">Tottenham</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">10</div>
+              <div class="team">Nottingham Forest</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">11</div>
+              <div class="team">Crystal Palace</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">12</div>
+              <div class="team">Everton</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">13</div>
+              <div class="team">Bournemouth</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">14</div>
+              <div class="team">Fulham</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">15</div>
+              <div class="team">West Ham</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">16</div>
+              <div class="team">Brentford</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">17</div>
+              <div class="team">Sunderland</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">18</div>
+              <div class="team">Wolves</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">19</div>
+              <div class="team">Leeds</div>
+              <div class="points">+3</div>
+            </div>
+            <div class="league_row">
+              <div class="position">20</div>
+              <div class="team">Burnley</div>
+              <div class="points">+3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
