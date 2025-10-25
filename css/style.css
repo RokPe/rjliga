@@ -203,3 +203,43 @@ span {
   font-weight: bold;
   color: #9e702a;
 }
+
+@media (max-width: 1240px) {
+  .container {
+    flex-direction: column;
+    max-width: 600px;
+  }
+  .right_top {
+    display: none;
+  }
+}
+
+@media (max-width: 490px) {
+  .row .matches_played,
+  .row .won,
+  .row .draw,
+  .row .lost,
+  .row .goal_diff,
+  .row .points {
+    width: 28px;
+  }
+
+  .data_row {
+    font-size: 13px;
+  }
+  
+  .row .goals  {
+    display: none;
+}
+  .content_wrapper {
+    padding: 10px 8px;
+  }
+
+  .league_row div {
+    width: 30px;
+  }
+
+  .league_row .team {
+    font-size: 0.7rem;
+  }
+}
